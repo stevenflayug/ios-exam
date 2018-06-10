@@ -78,7 +78,7 @@ class PersonDetailsTableViewController: UITableViewController {
             cell.detailTextLabel?.text = "Last Name"
         case .Birthday?:
             cell.textLabel?.text = personSelected?.birthDay
-            cell.detailTextLabel?.text = "Birhtday"
+            cell.detailTextLabel?.text = "Birthday"
         case .Age?:
             guard personSelected?.birthDay != nil else {
                 cell.detailTextLabel?.text = "No value for birthday"
