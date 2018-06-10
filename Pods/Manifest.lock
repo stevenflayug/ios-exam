@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.6.0)
+  - CoreDataManager (0.8.1):
+    - SwiftyJSON (~> 4.0.0)
+  - MBProgressHUD (1.0.0)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CoreDataManager (~> 0.8.1)
+  - MBProgressHUD (= 1.0.0)
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CoreDataManager
+    - MBProgressHUD
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  CoreDataManager: 41e9e4e779a9c859a95cb378942a3e5c05cc2e1a
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 7b5c856ddd6561e0f2f4c6129acb0f037f63b78a
+
+COCOAPODS: 1.5.3
