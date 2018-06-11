@@ -91,7 +91,7 @@ class PersonDetailsTableViewController: UITableViewController {
             cell.detailTextLabel?.text = "Email Address"
         case .MobileNumber?:
             cell.textLabel?.text = personSelected?.mobileNumber
-            cell.detailTextLabel?.text = "Email Address"
+            cell.detailTextLabel?.text = "Mobile Number"
         case .Address?:
             cell.textLabel?.text = personSelected?.address
             cell.detailTextLabel?.text = "Address"

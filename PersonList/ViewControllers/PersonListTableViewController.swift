@@ -14,6 +14,7 @@ class PersonListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Person List"
         configureRefreshControl()
         viewModel.showHudOnView()
         viewModel.getPersonsData(){ (error) in
