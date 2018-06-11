@@ -66,22 +66,30 @@ class PersonListTests: XCTestCase {
             switch row {
             case .FirstName?:
                 XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.detailTextLabel?.text, "First Name")
+                XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.textLabel?.text, personDetailsVC.personSelected?.firstName)
             case .LastName?:
                 XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.detailTextLabel?.text, "Last Name")
+                XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.textLabel?.text, personDetailsVC.personSelected?.lastName)
             case .Birthday?:
                 XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.detailTextLabel?.text, "Birthday")
+                XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.textLabel?.text, personDetailsVC.personSelected?.birthDay)
             case .Age?:
                 XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.detailTextLabel?.text, "No value for birthday")
             case .EmailAddress?:
                 XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.detailTextLabel?.text, "Email Address")
+                XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.textLabel?.text, personDetailsVC.personSelected?.emailAddress)
             case .MobileNumber?:
                 XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.detailTextLabel?.text, "Mobile Number")
+                XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.textLabel?.text, personDetailsVC.personSelected?.mobileNumber)
             case .Address?:
                 XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.detailTextLabel?.text, "Address")
+                XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.textLabel?.text, personDetailsVC.personSelected?.address)
             case .ContactPerson?:
                 XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.detailTextLabel?.text, "Contact Person")
+                XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.textLabel?.text, personDetailsVC.personSelected?.contactPerson)
             case .ContactPersonNumber?:
                 XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.detailTextLabel?.text, "Contact Person Mobile Number")
+                XCTAssertEqual(personDetailsVC.tableView.cellForRow(at: indexPath)?.textLabel?.text, personDetailsVC.personSelected?.contactPersonMobileNumber)
             default:
                 break
             }
